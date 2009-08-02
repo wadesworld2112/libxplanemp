@@ -1,0 +1,54 @@
+*******************************************************************************
+
+Copyright (c) 2005, Ben Supnik and Chris Serio.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*******************************************************************************
+
+Change History
+	3/7/05 - Initial Publication
+
+
+XSquawkBox Networking Classes - README
+
+The XSquawkBox networking classes are provided 100% as-is...we are not
+providing tech support, feature requests, fixing bugs, etc.  Please feel
+free to use these classes as a starting point for your own networking code.
+
+To use these classes, predefine either APL, IBM, or LIN to be 1 depending
+on the target platform.  Compile only the CPP files with the appropriate
+extension.
+
+These classes do not provide blocking APIs, except for "WaitForSockets",
+which is only provided on Windows (but could be ported to Linux easily).
+This reflects the networking code's origins in a non-blocking X-Plane plugin.
+
+These classes are not thread-safe.
+
+The Mac implementations use Open Transport and will work in a CFM plugin
+on Mac OS 9 or OS X, or in a Mach-O plugin.  If you want to use BSD networking
+in a Mach-O plugin, the quickest solution would be to port the Linux sockets-
+based implementation.
+
+All IP addresses and ports are passed around in native-endian format.
+
+The source files may have the wrong line endings for your platform - be 
+sure to check line endings if you have a compile problem.
+

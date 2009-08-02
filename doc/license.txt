@@ -1,0 +1,32 @@
+X-IvAp 0.1.7 (and later) Users License
+
+
+License
+--------------------------------------
+
+This version of X-IvAp is distributed under the GNU General Public License, version 2
+(or, at your choice, any later version).
+
+
+Credits
+--------------------------------------
+
+Special thanks to:
+
+Kristof Provost
+Andrew McGregor
+
+
+X-IvAp is using Ben Supniks multiplayer code for XSquawkbox, and would have been impossible
+to implement without his invaluable help. My personal thanks also go to Peter Meininger for
+providing the CSL models for XSquawkbox and X-IvAp, to Sandy Barbour for the excellent
+X-Plane SDK, Patrick Zangerle for the logo, Mikkel G. Hangaard and Splendor Bouman for
+the first beta tests (and for hooking me to X-Plane), the people from the IVAO networking
+and softdev departements as well as many many other nameless people who helped with the
+creation of this plugin.
+
+
+(c) 2006 Martin Domig, Kristof Provost, Andrew McGregor
+
+--
+Martin Domig <martin@domig.net>

@@ -1,0 +1,273 @@
+<html>
+
+<head>
+	<title>X-IvAp introduction</title>
+</head>
+
+<body>
+
+<!-- #### HEADER #### -->
+<div class="leftfloat">
+	<h1>Your first flight with X-IvAp</h1>
+
+</div>
+
+<hr />
+
+<div align="right">
+	<h2>X-IvAp</h2>
+</div>
+
+<p>&nbsp;</p>
+
+<!-- #### BODY #### -->
+<div align="center">
+  <div style="width: 700px">
+
+<div align="center"><img src="X-IvAp.gif"/></div>
+<div style="width: 600px" align="justify">
+<h3>Installation</h3>
+<p>
+Just copy the contents of the for_plugins_folder into the Resources/plugins folder of your X-Plane installation directory. To avoid conflicts you should disable the XSquawkBox and IVAORW plugins while you are using X-IvAp.
+</p>
+<h3>Your first flight</h3>
+<p>
+This is a walkthrough for people who are new to X-IvAp and/or IVAO. It describes how to connect to the IVAO network with X-IvAp. It may look complicated and very long at a first glance, but it really is quite simple. I just explain a lot here, this is why this page is so long.<br/>
+Don't panic.
+</p>
+<p>
+If you are not using X-Plane, or if you are not using X-IvAp, you are wasting your time here.
+</p>
+<p>
+I am assuming here that you already have X-IvAp installed, that it is not deactivated in the plugin manager and that you are not running XSquawkBox and, if you are on Windows, you have TeamSpeak? installed and are not running the IVAORW plugin. If any of this does not apply, I suggest to take action that it does before you continue.
+</p>
+<p>Additional information can be found on the <a href="http://www.ivao.aero/softdev/X-IvAp">the project homepage</a> and the <a href="http://forum.ivao.aero/forum.asp?FORUM_ID=304">support forum</a>.
+</p>
+
+
+<h3>X-Plane startup</h3>
+<p>
+Start X-Plane as usual, but please make sure that you are not on a runway before you continue (people tend to get very angry if you are logging in while being on the runway). The first thing you'll notice is a translucent window in your windshield, with some green text in it and some white stuff at the left and right borders. This is the User Interface (UI) window, and it can be hidden by pressing the Tab key. The white stuff at the side borders are meant to be buttons, you can click on them with your mouse. Usually there will be some text and an arrow in the UI window, right next to one of those buttons - there is now: on the right side, you see the text "MAIN". Press the button right next to it.
+</p>
+
+<h3>The MAIN screen</h3>
+<p>
+You should now be at the MAIN screen (in the middle on the top of the window, there should be a small label with says MAIN). At the left side, there are a bunch of numbers and there is something about VHF1 and VHF2. We will use this later, ignore it for now. At the right side, there are two labelled buttons: ACARS and SYSTEM. Don't push anything until I tell you to, just wait and see. Between those two buttons, it says "OFFLINE". This will change to "ONLINE" and your callsign when you connect to IVAO.
+</p>
+<p>
+Below all that stuff, you see two dashed lines with a white line of text between them (X-IvAp x.x.x for Windows/Linux/Mac ready). Maybe you have a red line of text too, telling you that the server list could not be downloaded. That is OK, it happens from time to time, ignore it for now.
+</p>
+
+<p>
+If you have some long red text in there, something is seriously wrong. If you have it, double-check your X-IvAp installation and make sure that XSB is not running.
+</p>
+<p>
+In the last line of that window, you have a blinking cursor. Whenever you see that cursor there, it means that the UI window has the keyboard focus and that anything you type will end up in there. So don't try to lower your gear by pressing G while this cursor is there. When the UI window has the keyboard and you need it to do something in X-Plane (like, lowering your gear before you land), either click anywhere outside the UI window or hide the UI window by hitting the Tab key. If you clicked outside the window, it won't look much different - just that blinking cursor is gone. Click on the window (but not one of the buttons) to get it back.
+</p>
+<p>
+The next step before you connect usually is to file a flight plan. Let's do that now.
+<ul>
+<li>Press the button next to ACARS</li>
+<li>Press the same button again (SEND FLIGHTPLAN)</li>
+</ul>
+(you could also send a flightplan by pulling down the X-Plane menu bar, select Plugins -> X-Ivap -> Send Flightplan - but that wouldn't be so much fun, would it.)
+</p>
+
+<h3>Filing a flightplan</h3>
+<p>
+You are awarded with the flight plan window, a piece of work that wants to have quite a lot of information from you.
+</p>
+<p>
+In the first line, enter:
+<ul>
+<li>your radio callsign (no dashes, DAL-4432 will be DAL4432)</li>
+<li>flight rules (V = VFR, I = IFR, Y = IFR -> VFR, Z = VFR -> IFR)</li>
+<li>type of your flight (S = scheduled, N = non-scheduled, G = general aviation, M = military, X... I forgot what that is)</li>
+</ul>
+
+
+Second Line:
+<ul>
+<li>Number: this is the number of aircraft this flightplan is for. Usually you enter 1 here, if you fly in formation, fill in the number of aircraft in the formation.</li>
+<li>Type of aircraft: enter the ICAO Code of your aircraft here. If you don't know the ICAO code of your aircraft, you are in good company (I usually don't know it either). In this case, enter what you know about it, maybe "BOEING" or "CESSNA" or "SKYLANE" or "CONSTELLATION" - anything that is part of the ICAO code, the name of the manufacturer or the name of the aircraft model. Below of the text field there is a drop down list that updates its contents as you type. Once done, pick the apropriate entry from this list, and the text field will be filled with the ICAO code of your model. Cool, eh. Picking the aircraft from the list also updates the wake category, which is right next to the aircraft type field.</li>
+<li>Wake cat: if you selected your aircraft model from the drop down list like described above, leave this alone. Otherwise select either L (light), M (medium) or H (heavy).</li>
+<li>Equipment: This text field describes the equipment you have on board of your aircraft, stuff like navigation instrumentation, FMS, GPS, NDBs etc. For each component you have, add the corresponding symbol. For examle, "SD" means that you have the Standard instrumentation (VHF radios, ADF, VOR and ILS) and a DME. You'll find a complete list at the end of this page.</li>
+<li>Transponder type (usually this is C for a mode C transponder. See the end of this page)</li>
+</ul>
+
+
+In the next text field, you are required to enter your airlines ICAO code (or in case of a VA, the code it has been assigned by IVAO). Next to it there is a drop down list which works quite similar to the type of aircraft list above, it is used to search for airlines. Leave the text field empty if you are not flying for an airline or a VA.
+
+</p>
+<p>
+Note: The type of aircraft and the airline code you select here determines how you are being displayed to other pilots online.
+</p>
+<p>
+The next fields are pretty obvious (departure, departure time, speed, and altitude).
+</p>
+<p>
+In the route field, fill in your flight plan route, without departure and destination airport. That is, if you fly from EBBR to EDDM, you will enter "SOPOK UY863 ETENO Y863 RUDUS UL984 BOMBI T104 WLD", and nothing else - especially not EDDM and/or EBBR. If you enter a proper route here, you can automatically export it to the FMC later by pushing the "Export to FMC" on the bottom of this window. See the general informations section for additional information.
+</p>
+The remaining fields are pretty obvious too (EET is the estimated time enroute, endurance is your "fuel time", POB is the number of persons on board).
+</p>
+<p>
+When done, hit the "Send FPL" button. The flightplan window will disappear, and you will get a yellow line in the main window telling you that the flightplan has been prefiled. It will automatically be sent to the network when you connect. We're going to do that now.
+</p>
+
+<h3>Connecting</h3>
+
+<p>
+Before you connect, make sure that your transponder is not in mode C. You can check and change in X-IvAp or by using your aircrafts transponder instrument.
+</p>
+<p>
+To do it in X-IvAp, hit the SYSTEM button. At the left side of the screen, you can read either "XPDR is SBY" or "XPDR is MODE C". If it says "MODE C", press the button on the left side of the line, the transponder should switch to SBY (also notice the knob on your transponder instrument turning as you press this button). To get back to the main screen, press the MAIN button on the bottom right.
+</p>
+<p>
+Once again - make sure that you are NOT on a runway, and that your transponder is in mode SBY.
+</p>
+<p>
+In the UI window, press the SYSTEM button, then press CONNECT. You'll get the Connection window, which wants to know a few things from you.
+</p>
+<p>
+You already prefiled your flightplan, so the Callsign text field is already filled for you. What remains is your personal information:
+<ul>
+<li>Fill in your real name. Yes, your real name, your full name and no pseudonym, and please be honest here.</li>
+
+<li>Base Airport is the airport closest to where you live. In my case this is LOIH, a small airfield in Austria, north of the Alps, only about half a mile from the Swiss border. If you want to have an exciting flight over the mountains, Switzerland, Lake Constance or southern Germany, this is the place to start. Its rather small tho, don't try to get there with anything much larger than a BE55.</li>
+<li>Enter your VID and your password</li>
+<li>From the Server list, pick the server that is closest to your position (your real position where you live at, not where you are in the simulator).</li>
+<li>If you want to use TeamSpeak? on Windows, check the Use Voice box.</li>
+<li>Hit the Connect button.</li>
+</ul>
+
+If all goes right, you'll get a few lines of blue text that basically tell you which server you are on and that you are supposed to have some fun. You get that text in two different locations: in a popup window to the top right of your screen and in the UI window. The popup window will display that message for 20 seconds, after that it will disappear again. Every time you get a text message, it will appear for 20 seconds in the popup window. That way you can fly online without having to display the UI window all the time, and you won't miss text messages.
+</p>
+<p>
+After some time, the weather in your simulation will change: X-IvAp automatically sets the weather in your simulation as you fly, including high altitude winds, clouds, turbulence and a lot of other stuff. Check the details section for more information about weather.
+</p>
+
+<p>
+It's time to talk to ATC now.
+</p>
+<h3>Using the radio</h3>
+<p>
+Remember the stuff with all the numbers on the top left of the main window? You can use this to tune your radio to an ATC station and to see which ATC is online around you. However, you don't have to use it. If you know the frequency, tune it on your radio panel (or tune it by typing .c1 123.45 in the main window). X-IvAp will then switch to this ATC station and tune TeamSpeak? for you. But for now, lets just see whos online.
+</p>
+<p>
+Next to the top left button of the main screen, you read something like "VHF1 123.450" (the frequency you are tuned to), and below that "123.450 <TX/RX>". This means that you currently receive (RX) on this frequency, and that you transmit (TX) on this frequency (you can receive on two frequencies at the same time, go to the SYSTEM page and activate RADIO COUPLING - however, for now you'll receive text only on the secondary radio). If the frequency 123.45 happens to be manned by ATC, the ATC callsign (ABCD_CTR for example) is being displayed instead of the frequency.
+</p>
+<p>
+To transmit on your radio by text, enter the text in the main window and press enter.
+</p>
+<p>
+To tune your primary radio to an ATC station, press the top left button. You'll end up on the COM1 screen, containing an ATC list.
+
+</p>
+
+<h3>Using the ATC list</h3>
+<p>
+To the right side of this window, you have a list of callsigns of the ATC stations that are within range and manned. To tune your radio to any of those frequencies, press the button next to the ATCs callsign, the UI will switch back to the MAIN screen and your radio is being tuned to the new frequency.
+</p>
+
+<p>
+The list to the right has only room for 6 entries, but sometimes there are more than 6 ATC statons within your range. This list is, by default, sorted by the distance from you to the ATC station, so it is likely that the controller who is responsible for your airspace is somewhere among those 6. If he is not, you can switch to the next page of the ATC list by pressing the NEXT PAGE button. You also can change the sort order (DISTANCE, FREQ or CALLSIGN).
+</p>
+
+<p>&nbsp;</p>
+<p>
+I'll leave you alone here. There are some features that I did not mention, but you will stumble over them as you play around in X-IvAp a bit. For example, try to find out how to request the METAR for EGLL, or any other airport, how to disable weather, and how to make the window background darker. I'd run out of coffee before I could write down how this all works...
+</p>
+
+<strong>Have fun! :)</strong><br/>
+- Martin
+<p>&nbsp;</p>
+
+
+
+<h3>List of .dot commands</h3>
+<p>
+Oh one last thing - the .dot commands are a bit different from XSB. You can enter them in the main window. 
+<br/>
+Here's the list:
+<ul>
+<li>.x 1234 sets transponder code to 1234</li>
+<li>.c1 123.45 tunes com1 to 123.45</li>
+
+<li>.c2 122.8 tunes com2 to 122.8</li>
+<li>.chat <callsign> opens a chat window to callsign. In that chat window, you can add and remove other callsigns by typing +callsign and -callsign.</li>
+<li>.atis <callsign> requests callsign's atis (without tuning TeamSpeak?)</li>
+<li>.taf .shorttaf .metar is used to retrieve METAR, TAF and SHORTTAF for weather stations or airports</li>
+<li>.msg <callsign> <text> send a private message to callsign</li>
+
+<li>.wallop message sends a message to all SUPs online</li>
+<li>.broadcast message sends a network broadcast message (SUPs only)</li>
+<li>.nomp turns off multiplayer, .yesmp turns it on</li>
+<li>.nowx turns off weather, .yeswx turns it on</li>
+<li>.voice turns on voice, .novoice turns it off</li>
+</ul>
+</p>
+
+<h3>Equipment codes</h3>
+<p><ul>
+<li>S: Standard (VHF, ADF, VOR, ILS)</li>
+<li>A: Loran A</li>
+<li>C: Loran C</li>
+<li>D: DME</li>
+<li>E: EGWPS</li>
+<li>F: ADF</li>
+<li>G: GPS/GNSS</li>
+<li>H: HF RTF</li>
+<li>I: INS (Inertial nav)</li>
+<li>J: Data Link</li>
+<li>K: MLS</li>
+<li>L: ILS</li>
+<li>M: Omega</li>
+<li>O: VOR</li>
+<li>P: Doppler</li>
+<li>R: RNAV (RNP/RNPC)</li>
+<li>T: TACAN</li>
+<li>U: UHF</li>
+<li>V: VHF</li>
+<li>W: RVSM (FL290-FL410)</li>
+<li>X: MNPS</li>
+<li>Y: CMPS</li>
+<li>Z: Other (specify item 18 preceded by COM/ or NAV/)</li>
+</ul>
+For Transponders:
+<ul>
+<li>C: Mode C
+<li>S: Mode S (with both pressure altitude and aircraft identification)</li>
+<li>X: Mode S (without pressure altitude and aircraft identification)</li>
+<li>P: Mode S (with pressure altitude but without aircraft identification)</li>
+<li>I: Mode S (without pressure altitude but with aircraft identification)</li>
+<li>A: Mode A only (no altitude reporting)</li>
+<li>N: No transponder on board</li>
+</ul>
+</p>
+
+<p>&nbsp;</p>
+
+</div>
+</div>
+
+
+<p>&nbsp;</p><p>
+
+</p>
+
+
+</div>
+
+<!-- #### FOOTER #### -->
+<p>&nbsp;</p>
+
+<hr />
+
+<div class="copy">
+	<p class="copy">2006 - <a href="mailto:martin@domig.net">Martin Domig</a> - All Rights Reserved</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XIvAp", "XIvAp\XIvAp.vcproj", "{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9689E387-3E91-4F44-BB2E-4425C872789A} = {9689E387-3E91-4F44-BB2E-4425C872789A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PTypes_ST", "ptypes\win32\PTypes_ST.vcproj", "{9689E387-3E91-4F44-BB2E-4425C872789A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		IVAO = IVAO
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}.Debug.ActiveCfg = Debug|Win32
+		{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}.Debug.Build.0 = Debug|Win32
+		{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}.IVAO.ActiveCfg = IVAO|Win32
+		{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}.IVAO.Build.0 = IVAO|Win32
+		{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}.Release.ActiveCfg = Release|Win32
+		{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}.Release.Build.0 = Release|Win32
+		{9689E387-3E91-4F44-BB2E-4425C872789A}.Debug.ActiveCfg = Debug|Win32
+		{9689E387-3E91-4F44-BB2E-4425C872789A}.Debug.Build.0 = Debug|Win32
+		{9689E387-3E91-4F44-BB2E-4425C872789A}.IVAO.ActiveCfg = IVAO|Win32
+		{9689E387-3E91-4F44-BB2E-4425C872789A}.IVAO.Build.0 = IVAO|Win32
+		{9689E387-3E91-4F44-BB2E-4425C872789A}.Release.ActiveCfg = Release|Win32
+		{9689E387-3E91-4F44-BB2E-4425C872789A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

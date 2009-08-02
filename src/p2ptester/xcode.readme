@@ -1,0 +1,8 @@
+To generate an XCode project, run:
+
+qmake -spec macx-xcode p2ptester.pro 
+
+NOTE:
+XCode won't manage the .pro file for you, so when you add new files
+to the project, add them manually to src.pro and run that command
+again.

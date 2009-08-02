@@ -1,0 +1,279 @@
+; This file contains mappings from CSL airline/livery codes to the equivalents
+; in the MTL.
+;
+; One code per line
+; Format:
+; "<CSL-Code>" "<MTL-Code>"
+;
+; The quotes are necessary because the fields could contain blanks.
+;
+; <CSL-Code> is a (max.) 8 digit string, where the first 3 characters are the airline code
+;            and the last 5 characters the livery code. Example: DLHSTARA
+; <MTL-Code> is a (max.) 6 digit string that designs the same livery in the MTL system. The
+;            first 3 characters are the airline code, followed by the MTL livery code.
+;            Example: DHLSA
+;
+; Note: with this file, it is also possible to do map airline codes.
+; 
+
+
+
+; Southwest Airlines liveries
+;
+"SWADGOLD" "SWAGLD"
+"SWASHAMU" "SWASHA"
+"SWALONES" "SWALON"
+"SWAARIZN" "SWARIZ"
+"SWANEWMX" "SWANMX"
+"SWANEVAD" "SWANEV"
+"SWASILVR" "SWASLV"
+"SWACLFRN" "SWAFRN"
+"SWA3CRWN" "SWACRW"
+"SWANREXP" "SWAEXP"
+"SWANBAFN" "SWAAFN"
+"SWAJMORR" "SWAMOR"
+"SWAHEART" "SWAHRT"
+"SWAKITTY" "SWAKTY"
+"SWAHERBK" "SWAERB"
+"SWAWINSP" "SWAINS"
+"SWAMORIS" "SWARIS"
+
+; America West liveries
+;
+"AWEOLDGR" "AWEOLD"
+"AWESOHIO" "AWESOH"
+"AWETEAMW" "AWEAMW"
+"AWENEVAD" "AWEEVA"
+"AWEACARD" "AWEACA"
+"AWEARIZN" "AWEARI"
+"AWEADMBK" "AWEDMB"
+
+; Delta Airlines liveries
+;
+"DALDALNC" "DALNEW"
+"DALDALMC" "DALMCL"
+"DALDALOC" "DALOLD"
+"DALDALBC" "DALBCL"
+"DALDLXNC" "DALXNC"
+"DALDLXPP" "DALXPP"
+"DALDSNNC" "DALNNC"
+"DALDALSS" "DALSSC"
+"DALDALSG" "DALSGC"
+"DALDAL75" "DALY75"
+
+; Delta Connection liveries
+;
+"CAAASANC" "CAANEW"
+"CAAASAOC" "CAAOLD"
+"CAAASASP" "CAASPC"
+"COMCOMNC" "COMNEW"
+"SKWSKYNC" "SKWNEW"
+"PRTPRTNC" "PRTNEW"
+
+; Air France liveries
+;
+"AFRAFR70" "AFROLD"
+
+; American Airlines liveries
+;
+"AALASTRO" "AALAST"
+
+; Alaska Airlines liveries
+;
+"ASAASAOC" "ASAOLD"
+"ASAASANC" "ASANEW"
+"ASASEAHK" "ASAAHK"
+"ASADISNY" "ASADIS"
+
+; Continental Airlines liveries
+;
+"COACOA59" "COAA59"
+"COARDGLD" "COAGLD"
+"BTARJ100" "BTA100"
+
+; Czech Air Lines liveries
+;
+"CSACSA80" "CSAA80"
+
+; Korean Air Lines liveries
+;
+"KALWDCUP" "KALCUP"
+
+; Lufthansa Liveries
+;
+"DLHLUBRD" "DLHBRD"
+"DLHSTARA" "DLHSA"
+"DLHDLHOC" "DLHOLD"
+"DLHCARGO" "DLHCRG"
+
+; Northwest Airlines liveries
+;
+"NWAWHITE" "NWAWHI"
+"NWARDTOP" "NWATOP"
+"NWACARGO" "NWACRG"
+"NWAC3SPD" "NWACRG"
+
+
+; United Air Lines liveries
+;
+"UALUALOC" "UALOLD"
+"UALUALNC" "UALNEW"
+"UALUAL67" "UALL67"
+"UALSHUTL" "UALSHT"
+"UALUATED" "UALTED"
+"UALSTARA" "UALARA"
+
+; United Parcel Service liveries
+;
+"UPSUPSOC" "UPSSOC"
+
+; Air Canada & Air Canada Jazz liveries
+;
+"ACATRANS" "ACAANS"
+"ACAFLAGS" "ACA911"
+"ACASYMPH" "ACAMPH"
+"ACARAPTR" "ACAPTR"
+"ACATANGO" "ACANGO"
+"ACASTARA" "ACAARA"
+"ACABNOSE" "ACAOSE"
+"ACARTAIL" "ACAAIL"
+"ACACARGO" "ACACRG"
+"ACAFSPIR" "ACASPI"
+"JZAGREEN" "JZAGRN"
+"JZAORANG" "JZAORG"
+"JZAREDJZ" "JZADJZ"
+"JZAYELLO" "JZAYEL"
+
+; British Airways liveries
+;
+"BAWLNDOR" "BAWDOR"
+"BAWRTAIL" "BAWTAI"
+"BAWBHONE" "BAWONE"
+"BAWKGUTY" "BAWGUT"
+"BAWTEAMB" "BAWAMB"
+"BAWDREAM" "BAWEAM"
+"BAWWINGS" "BAWWIN"
+"BAWWHALE" "BAWWHA"
+"BAWWAVES" "BAWWAV"
+"BAWWCITY" "BAWCTY"
+"BAWATREE" "BAWTRE"
+"BAWCROSE" "BAWCRO"
+"BAWPAITH" "BAWITH"
+"BAWRNDEZ" "BAWDEZ"
+"BAWPOOLE" "BAWOLE"
+"BAWCOLUM" "BAWCOL"
+"BAWDEFBL" "BAWDEF"
+"BAWEMELE" "BAWEME"
+"BAWBLOMS" "BAWOMS"
+"BAWUNION" "BAWION"
+"BAWWLCUP" "BAWCUP"
+
+; KLM Dutch Airlines liveries
+;
+"KLMKLMWB" "KLMMWB"
+"KLMKASIA" "KLMASI"
+
+; AirTran liveries
+;
+"TRSTRSNC" "TRSNEW"
+
+; JetBlue liveries
+;
+"JBUDIMND" "JBUDIA"
+"JBUDOTTS" "JBUDOT"
+"JBUGRIDS" "JBUGRD"
+
+; SAS Scandinavian Airline System liveries
+;
+"SASBTAIL" "SASBTA"
+"SASWTAIL" "SASWTA"
+"SASFLAKE" "SASFLA"
+
+; VASP liveries
+;
+"VSPVSWEB" "VSBWEB"
+
+; US Airways liveries
+;
+"USANAVTP" "USANAV"
+"USASHUTL" "USASHU"
+
+; Varig liveries
+;
+"VRGBBOTM" "VRGBLU"
+"VRGWHITE" "VRGWHI"
+"VRGVRG75" "VRGA75"
+"VRGFLCD1" "VRGCD1"
+"VRGFLCD2" "VRGCD2"
+"VRGCEARA" "VRGARA"
+"VRGBSTAR" "VRGSTA"
+"VRGBR500" "VRG500"
+"VRGSTARA" "VRGSRA"
+
+; LOT Polish Airlines liveries
+;
+"LOTSTARA" "LOTSTA"
+
+; DHL liveries
+;
+"DHLRSTRP" "DHLSTR"
+"DHLYELLO" "DHLYEL"
+
+; Frontier liveries
+;
+"FFTFLYNX" "FFTLYX"
+"FFTFBEAR" "FFTBEA"
+"FFTBISON" "FFTBIS"
+"FFTCOYOT" "FFTCOY"
+"FFTDOLPH" "FFTDOL"
+"FFTEAGLE" "FFTEAG"
+"FFTEGRET" "FFTEGR"
+"FFTFRELK" "FFTELK"
+"FFTFRFOX" "FFTFOX"
+"FFTGOOSE" "FFTGOO"
+"FFTHSEAL" "FFTSEA"
+"FFTFHARE" "FFTHAR"
+"FFTHERON" "FFTHER"
+"FFTHORSE" "FFTHOR"
+"FFTHMNGB" "FFTHUM"
+"FFTMALRD" "FFTMAL"
+"FFTMOOSE" "FFTMOO"
+"FFTMGOAT" "FFTMGT"
+"FFTMLION" "FFTMLI"
+"FFTMDEER" "FFTMUL"
+"FFTOCELT" "FFTOCE"
+"FFTPRNGH" "FFTPRO"
+"FFTPUFFN" "FFTPUF"
+"FFTRFOX1" "FFTRF1"
+"FFTRFOX2" "FFTRF2"
+"FFTSHARE" "FFTSHT"
+"FFTSNOWL" "FFTSOT"
+"FFTFSWAN" "FFTSWA"
+"FFTWDUCK" "FFTWOO"
+"FFTWHALE" "FFTWHA"
+"FFTFWOLF" "FFTWOL"
+
+; Hawaiian Airlines liveries
+;
+"HALPURPL" "HALPFT"
+"HALRAIDR" "HALOAK"
+"HALREDST" "HALRSC"
+"HALHAL70" "HALHAW"
+
+; Cathay Pacific liveries
+;
+"CPAWHITE" "CPAWHI"
+"CPACARGO" "CPACRG"
+"CPASTEAM" "CPASTE"
+"CPAWCITY" "CPACIT"
+
+; Singapore liveries
+;
+"SIAGSTRP" "SIASTR"
+"SIAWPALM" "SIAPAL"
+
+; Swedish Armed Forces / Svenska Flygvapnet
+;
+"SVFYELOW" "SVFYEL"
+"SVFCAMOU" "SVFCAM"
+

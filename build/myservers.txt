@@ -1,0 +1,20 @@
+; Custom Server List
+;
+; The servers listed here will be added to the server list
+; in the connect form. One server entry per line. Lines that
+; do not begin with "N:" are ignored.
+;
+; Format:
+; N:<name>:<address>:
+; where <name> is a descriptive text that will be displayed
+;              in the dropdown window
+;       <address> is either the IP of the server or a fully
+;              qualified domain name (like fsd.server.com)
+;
+; INSERT YOUR SERVERS BELOW THIS LINE ######################
+;
+N:IvAi on same computer:127.0.0.1:
+N:X-Plugins:x-plugins.com:
+;
+; INSERT YOUR SERVERS ABOVE THIS LINE ######################
+; end of file (do not remove this line)
