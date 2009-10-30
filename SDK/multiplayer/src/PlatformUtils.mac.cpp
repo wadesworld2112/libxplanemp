@@ -64,6 +64,8 @@ struct CFSmartPtr {
 
 int HFS2PosixPath(const char *path, char *result, int resultLen)
 {
+	bool is_dir = (path[strlen(path)-1] == ':');
+
 	CFSmartPtr<CFStringRef>		inStr(CFStringCreateWithCString(kCFAllocatorDefault, path ,kCFStringEncodingMacRoman));
 	if (inStr == NULL) return -1;
 	
@@ -75,6 +77,8 @@ int HFS2PosixPath(const char *path, char *result, int resultLen)
 	
 	if (!CFStringGetCString(outStr, result, resultLen, kCFStringEncodingMacRoman))
 		return -1;
+		
+	if(is_dir) strcat(result, "/");
 
 	return 0;
 }
