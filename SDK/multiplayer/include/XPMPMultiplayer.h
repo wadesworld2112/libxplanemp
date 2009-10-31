@@ -82,6 +82,7 @@ typedef	struct {
 	float	pitch;
 	float	roll;
 	float	heading;
+	char	label[32];
 } XPMPPlanePosition_t;
 
 
@@ -193,7 +194,7 @@ typedef	int			XPMPPlaneDataType;
  */
 enum {
 	xpmpData_Unavailable = 0,	/* The information has never been specified. */
-	xpmpData_Unchanged = 1,		/* The information from the last time the plug-in was aksed. */
+	xpmpData_Unchanged = 1,		/* The information from the last time the plug-in was asked. */
 	xpmpData_NewData = 2		/* The information has changed this sim cycle. */
 };
 typedef	int			XPMPPlaneCallbackResult;
