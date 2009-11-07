@@ -464,6 +464,19 @@ typedef	void (* XPMPRenderPlanes_f)(
  */
 void		XPMPDumpOneCycle(void);
 
+/*
+ * XPMPEnableAircraftLabels
+ * XPMPDisableAircraftLabels
+ * 
+ * These functions enable and disable the drawing of aircraft labels above the aircraft 
+ *
+ */	
+void				  XPMPEnableAircraftLabels(void);
+
+void				  XPMPDisableAircraftLabels(void);
+
+bool				  XPMPDrawingAircraftLabels(void);
+
 #ifdef __cplusplus
 }
 #endif

@@ -639,17 +639,17 @@ void			XPMPDefaultPlaneRenderer(void)
 	gDumpOneRenderCycle = 0;
 }
 
-void XPLMEnableAircraftLabels()
+void XPMPEnableAircraftLabels()
 {
 	gDrawLabels = true;
 }
 
-void XPLMDisableAircraftLabels()
+void XPMPDisableAircraftLabels()
 {
 	gDrawLabels = false;
 }
 
-bool XPLMDrawingAircraftLabels()
+bool XPMPDrawingAircraftLabels()
 {
 	return gDrawLabels;
 }
