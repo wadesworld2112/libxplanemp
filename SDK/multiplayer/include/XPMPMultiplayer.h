@@ -138,9 +138,9 @@ typedef	struct {
      float                 slatRatio;
      float                 wingSweep;
      float                 thrust;
-     float                 yolkPitch;
-     float                 yolkHeading;
-     float                 yolkRoll;
+     float                 yokePitch;
+     float                 yokeHeading;
+     float                 yokeRoll;
      xpmp_LightStatus      lights;
 } XPMPPlaneSurfaces_t;
 

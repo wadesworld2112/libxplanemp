@@ -401,9 +401,9 @@ void			XPMPDefaultPlaneRenderer(void)
 					renderRecord.state.slatRatio 		= surfaces.slatRatio 		;
 					renderRecord.state.wingSweep 		= surfaces.wingSweep 		;
 					renderRecord.state.thrust 			= surfaces.thrust 			;
-					renderRecord.state.yolkPitch 		= surfaces.yolkPitch 		;
-					renderRecord.state.yolkHeading 		= surfaces.yolkHeading 		;
-					renderRecord.state.yolkRoll 		= surfaces.yolkRoll 		;
+					renderRecord.state.yokePitch 		= surfaces.yokePitch 		;
+					renderRecord.state.yokeHeading 		= surfaces.yokeHeading 		;
+					renderRecord.state.yokeRoll 		= surfaces.yokeRoll 		;
 
 					renderRecord.lights.lightFlags		= surfaces.lights.lightFlags;
 				
@@ -413,9 +413,9 @@ void			XPMPDefaultPlaneRenderer(void)
 					renderRecord.state.flapRatio = (pos.elevation < 70) ? 1.0 : 0.0;
 					renderRecord.state.spoilerRatio = renderRecord.state.speedBrakeRatio = renderRecord.state.slatRatio = renderRecord.state.wingSweep = 0.0;
 					renderRecord.state.thrust = (pos.pitch > 30) ? 1.0 : 0.6;
-					renderRecord.state.yolkPitch = pos.pitch / 90.0;
-					renderRecord.state.yolkHeading = pos.heading / 180.0;
-					renderRecord.state.yolkRoll = pos.roll / 90.0;	
+					renderRecord.state.yokePitch = pos.pitch / 90.0;
+					renderRecord.state.yokeHeading = pos.heading / 180.0;
+					renderRecord.state.yokeRoll = pos.roll / 90.0;	
 
 					// use some smart defaults
 					renderRecord.lights.bcnLights = 1;
