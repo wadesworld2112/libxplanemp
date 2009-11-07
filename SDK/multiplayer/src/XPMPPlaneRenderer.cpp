@@ -67,6 +67,8 @@ std::vector<XPLMDataRef>			gMultiRef_X;
 std::vector<XPLMDataRef>			gMultiRef_Y;
 std::vector<XPLMDataRef>			gMultiRef_Z;
 
+bool gDrawLabels = true;
+
 struct cull_info_t {					// This struct has everything we need to cull fast!
 	float	model_view[16];				// The model view matrix, to get from local OpenGL to eye coordinates.
 	float	proj[16];					// Proj matrix - this is just a hack to use for gluProject.
@@ -590,39 +592,43 @@ void			XPMPDefaultPlaneRenderer(void)
 	}
 	
 	// PASS 4 - Labels
-	GLfloat	vp[4];
-	glGetFloatv(GL_VIEWPORT,vp);
-	
-	glMatrixMode(GL_PROJECTION);
-	glPushMatrix();
-	glLoadIdentity();
-	glOrtho(0, vp[2], 0, vp[3], -1, 1);
-	
-	glMatrixMode(GL_MODELVIEW);
-	glPushMatrix();
-	glLoadIdentity();
-	
+	if ( gDrawLabels )
+	{
+		GLfloat	vp[4];
+		glGetFloatv(GL_VIEWPORT,vp);
+		
+		glMatrixMode(GL_PROJECTION);
+		glPushMatrix();
+		glLoadIdentity();
+		glOrtho(0, vp[2], 0, vp[3], -1, 1);
+		
+		glMatrixMode(GL_MODELVIEW);
+		glPushMatrix();
+		glLoadIdentity();
+		
 		float c[4] = { 1, 1, 0, 1 };
 		
-
-	for (RenderMap::iterator iter = myPlanes.begin(); iter != myPlanes.end(); ++iter)
-	if(iter->first < labelDist)
-	if(!iter->second.cull)		// IMPORTANT - airplane BEHIND us still maps XY onto screen...so we get 180 degree reflections.  But behind us acf are culled, so that's good.
-	{
-		float x, y;
-		convert_to_2d(&gl_camera, vp, iter->second.x, iter->second.y, iter->second.z, 1.0, &x, &y);
 		
-		float rat = 1.0 - (iter->first / labelDist);
-		c[0] = c[1] = 0.5 + 0.5 * rat;
-		c[2] = 0.5 - 0.5 * rat;		// gray -> yellow - no alpha in the SDK - foo!
+		for (RenderMap::iterator iter = myPlanes.begin(); iter != myPlanes.end(); ++iter)
+			if(iter->first < labelDist)
+				if(!iter->second.cull)		// IMPORTANT - airplane BEHIND us still maps XY onto screen...so we get 180 degree reflections.  But behind us acf are culled, so that's good.
+				{
+					float x, y;
+					convert_to_2d(&gl_camera, vp, iter->second.x, iter->second.y, iter->second.z, 1.0, &x, &y);
+					
+					float rat = 1.0 - (iter->first / labelDist);
+					c[0] = c[1] = 0.5 + 0.5 * rat;
+					c[2] = 0.5 - 0.5 * rat;		// gray -> yellow - no alpha in the SDK - foo!
+					
+					XPLMDrawString(c, x, y+10, (char *) iter->second.label.c_str(), NULL, xplmFont_Basic);
+				}
 		
-		XPLMDrawString(c, x, y+10, (char *) iter->second.label.c_str(), NULL, xplmFont_Basic);
+		glMatrixMode(GL_PROJECTION);
+		glPopMatrix();	
+		glMatrixMode(GL_MODELVIEW);
+		glPopMatrix();
+		
 	}
-	
-	glMatrixMode(GL_PROJECTION);
-	glPopMatrix();	
-	glMatrixMode(GL_MODELVIEW);
-	glPopMatrix();
 
 	
 	// Final hack - leave a note to ourselves for how many of Austin's planes we relocated to do TCAS.
@@ -632,3 +638,19 @@ void			XPMPDefaultPlaneRenderer(void)
 	
 	gDumpOneRenderCycle = 0;
 }
+
+void XPLMEnableAircraftLabels()
+{
+	gDrawLabels = true;
+}
+
+void XPLMDisableAircraftLabels()
+{
+	gDrawLabels = false;
+}
+
+bool XPLMDrawingAircraftLabels()
+{
+	return gDrawLabels;
+}
+
