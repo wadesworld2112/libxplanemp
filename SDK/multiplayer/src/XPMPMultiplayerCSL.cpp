@@ -219,8 +219,6 @@ bool	LoadOnePackage(const string& inPath, int pass)
 		int						sim, xplm;
 		XPLMHostApplicationID 	host;	
 
-#define DEBUG_CSL_LOADING 1
-	
 #ifdef DEBUG_CSL_LOADING
 	XPLMDump() << "LoadOnePackage was passed inPath of: " << inPath << ".\n";
 #endif
