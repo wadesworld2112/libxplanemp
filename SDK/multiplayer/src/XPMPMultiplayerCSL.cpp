@@ -29,6 +29,7 @@
 #include <algorithm>
 #include "PlatformUtils.h"
 #include <errno.h>
+#include <string.h>
 
 using std::max;
 
